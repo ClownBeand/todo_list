@@ -39,8 +39,10 @@
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
-            <div class="form-group">
+            <div class="d-flex justify-content-between">
                 <button class="btn btn-lg btn-primary" type="submit" name="sendMe" value="1">Войти</button>
+                <a href="{{ route('user.login') }}" class="btn btn-lg btn-primary">Вернуться на страницу входа</a>
+
             </div>
         </form>
     </div>
