@@ -42,3 +42,5 @@ Route::name('user.')->group(function() {
 
     Route::post('/register', [RegisterController::class, 'save'])->name('register');
 });
+
+Route::get('/users/{user}', [LoginController::class, 'show']);
